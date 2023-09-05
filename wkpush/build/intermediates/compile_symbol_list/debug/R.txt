@@ -1696,6 +1696,7 @@ int color colorE8E7E7 0x0
 int color colorF5F5F5 0x0
 int color colorFFC107 0x0
 int color colorLine 0x0
+int color colorSelect 0x0
 int color colorSystemBg 0x0
 int color color_text_select_cursor 0x0
 int color colord8d5d5 0x0
@@ -1757,6 +1758,7 @@ int color homeColor 0x0
 int color homeColorSelected 0x0
 int color layoutColor 0x0
 int color layoutColorSelected 0x0
+int color linkColor 0x0
 int color m3_appbar_overlay_color 0x0
 int color m3_assist_chip_icon_tint_color 0x0
 int color m3_assist_chip_stroke_color 0x0

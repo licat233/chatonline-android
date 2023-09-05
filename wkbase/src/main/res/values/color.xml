@@ -5,10 +5,12 @@
     <color name="colorFFC107">#FFC107</color>
     <color name="red">#F80303</color>
     <color name="reminderColor">#FF5353</color>
+    <color name="linkColor">#1266db</color>
     <color name="redDisable">#F7A5A5</color>
     <color name="transparent">#00000000</color>
     <color name="colorF5F5F5">#f5f5f5</color>
-    <color name="colorAccent">#f65835</color>
+    <color name="colorAccent">#12cfdb</color>
+    <color name="colorSelect">#12db7e</color>
     <color name="colorAccentUn">#95F65835</color>
     <color name="colorAccentDisabled">#7E7E7E</color>
     <color name="color_text_select_cursor">#95F65835</color>

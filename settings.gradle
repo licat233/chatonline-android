@@ -18,7 +18,7 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "TsddClient"
+rootProject.name = "SwiftTalkClient"
 include ':MyLibs:rlottie'
 include ':MyLibs:oppopush'
 include ':MyLibs:vivopush'

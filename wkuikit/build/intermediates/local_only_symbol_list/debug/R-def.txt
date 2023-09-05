@@ -41,6 +41,12 @@ drawable ar_record_audio_btn_selector
 drawable chat_img_cover_bg
 drawable chat_text_link_desc_bg
 drawable drop_line
+drawable ic_chat_n
+drawable ic_chat_s
+drawable ic_contacts_n
+drawable ic_contacts_s
+drawable ic_mine_n
+drawable ic_mine_s
 drawable ic_reply_black_24dp
 drawable left_bg
 drawable msg_bg
@@ -434,13 +440,7 @@ mipmap chat_calls_video
 mipmap chat_calls_voice
 mipmap ic_a
 mipmap ic_call
-mipmap ic_chat_n
-mipmap ic_chat_s
-mipmap ic_contacts_n
-mipmap ic_contacts_s
 mipmap ic_logo
-mipmap ic_mine_n
-mipmap ic_mine_s
 mipmap ic_round_shape
 mipmap icon_approve
 mipmap icon_audio_call

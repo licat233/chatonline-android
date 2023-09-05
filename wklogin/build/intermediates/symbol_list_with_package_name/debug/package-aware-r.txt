@@ -1697,6 +1697,7 @@ color colorE8E7E7
 color colorF5F5F5
 color colorFFC107
 color colorLine
+color colorSelect
 color colorSystemBg
 color color_text_select_cursor
 color colord8d5d5
@@ -1755,6 +1756,7 @@ color homeColor
 color homeColorSelected
 color layoutColor
 color layoutColorSelected
+color linkColor
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -3699,7 +3701,6 @@ id autoCompleteToStart
 id avatarView
 id backIv
 id barrier
-id baseUrlTv
 id baseline
 id bestChoice
 id blocking

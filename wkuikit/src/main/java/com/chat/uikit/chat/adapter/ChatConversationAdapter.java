@@ -3,6 +3,7 @@ package com.chat.uikit.chat.adapter;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
@@ -36,8 +37,10 @@ import com.chat.base.utils.WKReader;
 import com.chat.base.utils.WKTimeUtils;
 import com.chat.uikit.R;
 import com.chat.uikit.enity.ChatConversationMsg;
+
 import org.telegram.ui.Components.RLottieDrawable;
 import org.telegram.ui.Components.RLottieImageView;
+
 import com.xinbida.wukongim.WKIM;
 import com.xinbida.wukongim.entity.WKChannel;
 import com.xinbida.wukongim.entity.WKChannelExtras;
@@ -218,7 +221,6 @@ public class ChatConversationAdapter extends BaseQuickAdapter<ChatConversationMs
                 drawable = new RLottieDrawable(getContext(), R.raw.error, "error", AndroidUtilities.dp(22), AndroidUtilities.dp(22));
             }
             sendingMsgIv.setAutoRepeat(autoRepeat);
-
             if (autoRepeat || isPlayAnimation) {
                 sendingMsgIv.setAnimation(drawable);
                 sendingMsgIv.playAnimation();
@@ -450,7 +452,7 @@ public class ChatConversationAdapter extends BaseQuickAdapter<ChatConversationMs
 //            if (!isScrolling)
             WKIM.getInstance().getChannelManager().fetchChannelInfo(item.channelID, item.channelType);
         }
-        helper.setText(R.id.nameTv,showName);
+        helper.setText(R.id.nameTv, showName);
     }
 
     private boolean isSetChatPwd(WKChannel channel) {

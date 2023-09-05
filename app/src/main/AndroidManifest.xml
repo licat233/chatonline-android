@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.xinbida.tsdd.demo">
+    package="com.swifttalk">
 
     <queries>
         <package android:name="com.tencent.mm" />
@@ -103,7 +103,7 @@
     </queries>
 
     <application
-        android:name=".TSApplication"
+        android:name="com.swifttalk.TSApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_logo"
@@ -118,7 +118,7 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.swifttalk.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FullscreenTheme">

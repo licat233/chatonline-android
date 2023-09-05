@@ -161,7 +161,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="@string/privacy_policy"
-                android:textColor="@color/color999"
+                android:textColor="@color/linkColor"
                 android:textSize="@dimen/font_size_14" />
 
             <TextView
@@ -171,7 +171,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="5dp"
                 android:text="@string/user_agreement"
-                android:textColor="@color/color999"
+                android:textColor="@color/linkColor"
                 android:textSize="@dimen/font_size_14" />
         </LinearLayout>
 
@@ -198,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/register"
-                android:textColor="@color/color999"
+                android:textColor="@color/linkColor"
                 android:textSize="@dimen/font_size_13" />
 
             <View
@@ -213,22 +213,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/forget_pwd"
-                android:textColor="@color/color999"
+                android:textColor="@color/linkColor"
                 android:textSize="@dimen/font_size_13" />
         </LinearLayout>
 
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/baseUrlTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/update_api"
-        android:textColor="@color/color999" />
+<!--    <TextView-->
+<!--        android:id="@+id/baseUrlTv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="@string/update_api"-->
+<!--        android:textColor="@color/color999" />-->
 
     <FrameLayout
         android:id="@+id/otherView"

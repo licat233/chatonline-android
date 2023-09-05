@@ -74,10 +74,10 @@ public class WKLoginActivity extends WKBaseActivity<ActLoginLayoutBinding> imple
     @Override
     protected void initView() {
         wkVBinding.loginBtn.getBackground().setTint(Theme.colorAccount);
-        wkVBinding.privacyPolicyTv.setTextColor(Theme.colorAccount);
-        wkVBinding.userAgreementTv.setTextColor(Theme.colorAccount);
-        wkVBinding.registerTv.setTextColor(Theme.colorAccount);
-        wkVBinding.forgetPwdTv.setTextColor(Theme.colorAccount);
+//        wkVBinding.privacyPolicyTv.setTextColor(Theme.colorAccount);
+//        wkVBinding.userAgreementTv.setTextColor(Theme.colorAccount);
+//        wkVBinding.registerTv.setTextColor(Theme.colorAccount);
+//        wkVBinding.forgetPwdTv.setTextColor(Theme.colorAccount);
         wkVBinding.checkbox.setResId(getContext(), R.mipmap.round_check2);
         wkVBinding.checkbox.setDrawBackground(true);
         wkVBinding.checkbox.setHasBorder(true);
@@ -146,7 +146,7 @@ public class WKLoginActivity extends WKBaseActivity<ActLoginLayoutBinding> imple
             wkVBinding.pwdEt.setSelection(Objects.requireNonNull(wkVBinding.pwdEt.getText()).length());
         });
         wkVBinding.loginBtn.setOnClickListener(v -> {
-            if (checkEditInputIsEmpty(wkVBinding.nameEt, R.string.name_not_null)) return;
+            if (checkEditInputIsEmpty(wkVBinding.nameEt, R.string.hint_name)) return;
             if (checkEditInputIsEmpty(wkVBinding.pwdEt, R.string.pwd_not_null)) return;
             if (code.equals("0086") && Objects.requireNonNull(wkVBinding.nameEt.getText()).toString().length() != 11) {
                 showSingleBtnDialog(getString(R.string.phone_error));
@@ -185,7 +185,7 @@ public class WKLoginActivity extends WKBaseActivity<ActLoginLayoutBinding> imple
             }
             return null;
         });
-        wkVBinding.baseUrlTv.setOnClickListener(v -> {
+        wkVBinding.loginTitleTv.setOnLongClickListener(v -> {
             String ip = "";
             String port = "";
             new XPopup.Builder(this)
@@ -193,19 +193,19 @@ public class WKLoginActivity extends WKBaseActivity<ActLoginLayoutBinding> imple
                     .asCustom(new UpdateApiDialog(this, ip, port, (ip1, port1) -> {
                         UpdateBaseAPIMenu apiMenu = new UpdateBaseAPIMenu(ip1, port1);
                         EndpointManager.getInstance().invoke("update_base_url", apiMenu);
-                        showBaseUrl();
-                    }))
-                    .show();
+//                        showBaseUrl();
+                    })).show();
+            return true;
         });
-        showBaseUrl();
+//        showBaseUrl();
     }
 
-    private void showBaseUrl() {
-        String apiURL = WKSharedPreferencesUtil.getInstance().getSP("api_base_url");
-        if (!TextUtils.isEmpty(apiURL)) {
-            wkVBinding.baseUrlTv.setText(apiURL);
-        }
-    }
+//    private void showBaseUrl() {
+//        String apiURL = WKSharedPreferencesUtil.getInstance().getSP("api_base_url");
+//        if (!TextUtils.isEmpty(apiURL)) {
+//            wkVBinding.baseUrlTv.setText(apiURL);
+//        }
+//    }
 
     @Override
     public void loginResult(UserInfoEntity userInfoEntity) {

@@ -25,9 +25,6 @@ public final class ActLoginLayoutBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final TextView baseUrlTv;
-
-  @NonNull
   public final CheckBox checkBox;
 
   @NonNull
@@ -72,16 +69,14 @@ public final class ActLoginLayoutBinding implements ViewBinding {
   @NonNull
   public final TextView userAgreementTv;
 
-  private ActLoginLayoutBinding(@NonNull RelativeLayout rootView, @NonNull TextView baseUrlTv,
-      @NonNull CheckBox checkBox, @NonNull com.chat.base.ui.components.CheckBox checkbox,
-      @NonNull LinearLayout chooseCodeTv, @NonNull TextView codeTv, @NonNull TextView forgetPwdTv,
-      @NonNull MaterialButton loginBtn, @NonNull TextView loginTitleTv,
-      @NonNull RelativeLayout mainView, @NonNull TextView myTv, @NonNull AppCompatEditText nameEt,
-      @NonNull FrameLayout otherView, @NonNull TextView privacyPolicyTv,
-      @NonNull AppCompatEditText pwdEt, @NonNull TextView registerTv,
-      @NonNull TextView userAgreementTv) {
+  private ActLoginLayoutBinding(@NonNull RelativeLayout rootView, @NonNull CheckBox checkBox,
+      @NonNull com.chat.base.ui.components.CheckBox checkbox, @NonNull LinearLayout chooseCodeTv,
+      @NonNull TextView codeTv, @NonNull TextView forgetPwdTv, @NonNull MaterialButton loginBtn,
+      @NonNull TextView loginTitleTv, @NonNull RelativeLayout mainView, @NonNull TextView myTv,
+      @NonNull AppCompatEditText nameEt, @NonNull FrameLayout otherView,
+      @NonNull TextView privacyPolicyTv, @NonNull AppCompatEditText pwdEt,
+      @NonNull TextView registerTv, @NonNull TextView userAgreementTv) {
     this.rootView = rootView;
-    this.baseUrlTv = baseUrlTv;
     this.checkBox = checkBox;
     this.checkbox = checkbox;
     this.chooseCodeTv = chooseCodeTv;
@@ -126,12 +121,6 @@ public final class ActLoginLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.baseUrlTv;
-      TextView baseUrlTv = ViewBindings.findChildViewById(rootView, id);
-      if (baseUrlTv == null) {
-        break missingId;
-      }
-
       id = R.id.checkBox;
       CheckBox checkBox = ViewBindings.findChildViewById(rootView, id);
       if (checkBox == null) {
@@ -218,9 +207,9 @@ public final class ActLoginLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActLoginLayoutBinding((RelativeLayout) rootView, baseUrlTv, checkBox, checkbox,
-          chooseCodeTv, codeTv, forgetPwdTv, loginBtn, loginTitleTv, mainView, myTv, nameEt,
-          otherView, privacyPolicyTv, pwdEt, registerTv, userAgreementTv);
+      return new ActLoginLayoutBinding((RelativeLayout) rootView, checkBox, checkbox, chooseCodeTv,
+          codeTv, forgetPwdTv, loginBtn, loginTitleTv, mainView, myTv, nameEt, otherView,
+          privacyPolicyTv, pwdEt, registerTv, userAgreementTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

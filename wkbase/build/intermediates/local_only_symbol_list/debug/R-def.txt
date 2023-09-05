@@ -184,6 +184,7 @@ color colorE8E7E7
 color colorF5F5F5
 color colorFFC107
 color colorLine
+color colorSelect
 color colorSystemBg
 color color_text_select_cursor
 color colord8d5d5
@@ -194,6 +195,7 @@ color homeColor
 color homeColorSelected
 color layoutColor
 color layoutColorSelected
+color linkColor
 color popupTextColor
 color receive_text_color
 color red

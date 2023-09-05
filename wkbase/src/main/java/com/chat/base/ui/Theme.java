@@ -48,11 +48,11 @@ import org.telegram.ui.Components.RLottieDrawable;
 import java.lang.reflect.Method;
 
 public class Theme {
-    public static int colorAccount = 0xFFf65835;
-    public static int colorAccountDisable = 0x95F65835;
+    public static int colorAccount = 0xFF12CFDB;
+    public static int colorAccountDisable = 0x9012CFDB;
     public static int color999 = 0xFF999999;
-    public static int colorCCC = 0xFFCCCCCC;
-    public static int pressedColor = 0xff8c9197;
+    public static int colorCCC = 0xFFCCCCCC;  
+    public static int pressedColor = 0xff12db7e;
     private static final Paint maskPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     public static final String LIGHT_MODE = "light";
     public static final String DARK_MODE = "dark";

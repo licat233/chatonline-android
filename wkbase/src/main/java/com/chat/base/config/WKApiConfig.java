@@ -9,17 +9,25 @@ import com.xinbida.wukongim.entity.WKChannelType;
  * api地址
  */
 public class WKApiConfig {
-    public static String baseUrl = "";
-    public static String baseWebUrl = "";
+    public static String defaultBaseUrl = "http://api.im.catli.net/v1/";
+    public static String defaultBaseWebUrl = "http://web.im.catli.net/";
+
+    public static String baseUrl = defaultBaseUrl;
+    public static String baseWebUrl = defaultBaseWebUrl;
 
     public static void initBaseURL(String apiURL) {
-        baseUrl = apiURL + "/v1/";
-        baseWebUrl = apiURL + "/web/";
+        baseUrl = defaultBaseUrl;
+        baseWebUrl = defaultBaseWebUrl;
     }
 
     public static void initBaseURLIncludeIP(String apiURL) {
-        baseUrl = apiURL + "/v1/";
-        baseWebUrl = apiURL + "/web/";
+        if (apiURL.startsWith("http") || apiURL.startsWith("HTTP")) {
+            baseUrl = apiURL + "/v1/";
+            baseWebUrl = apiURL + "/web/";
+        } else if (!TextUtils.isEmpty(apiURL)) {
+            baseUrl = "http://" + apiURL + "/v1/";
+            baseWebUrl = "http://" + apiURL + "/web/";
+        }
     }
 
     public static String getAvatarUrl(String uid) {

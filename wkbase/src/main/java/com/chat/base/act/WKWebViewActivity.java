@@ -16,7 +16,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.gson.JsonObject;
 import com.chat.base.R;
 import com.chat.base.base.WKBaseActivity;
 import com.chat.base.config.WKApiConfig;
@@ -34,6 +33,7 @@ import com.chat.base.ui.Theme;
 import com.chat.base.utils.AndroidUtilities;
 import com.chat.base.utils.WKDialogUtils;
 import com.chat.base.utils.WKToastUtils;
+import com.google.gson.JsonObject;
 import com.tencent.smtt.sdk.ValueCallback;
 import com.tencent.smtt.sdk.WebChromeClient;
 import com.xinbida.wukongim.WKIM;

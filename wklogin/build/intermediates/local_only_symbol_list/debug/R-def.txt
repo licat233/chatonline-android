@@ -7,7 +7,6 @@ drawable selector_account_relate_see_password
 id authCheckBox
 id avatarView
 id backIv
-id baseUrlTv
 id cancelTv
 id checkBox
 id checkbox

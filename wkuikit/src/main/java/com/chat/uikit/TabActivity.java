@@ -284,17 +284,17 @@ public class TabActivity extends WKBaseActivity<ActTabMainBinding> {
 
     private void playAnimation(int index) {
         if (index == 0) {
-            meIV.setImageResource(R.mipmap.ic_mine_n);
-            contactsIV.setImageResource(R.mipmap.ic_contacts_n);
-            chatIV.setImageResource(R.mipmap.ic_chat_s);
+            meIV.setImageResource(R.drawable.ic_mine_n);
+            contactsIV.setImageResource(R.drawable.ic_contacts_n);
+            chatIV.setImageResource(R.drawable.ic_chat_s);
         } else if (index == 1) {
-            meIV.setImageResource(R.mipmap.ic_mine_n);
-            chatIV.setImageResource(R.mipmap.ic_chat_n);
-            contactsIV.setImageResource(R.mipmap.ic_contacts_s);
+            meIV.setImageResource(R.drawable.ic_mine_n);
+            chatIV.setImageResource(R.drawable.ic_chat_n);
+            contactsIV.setImageResource(R.drawable.ic_contacts_s);
         } else {
-            chatIV.setImageResource(R.mipmap.ic_chat_n);
-            contactsIV.setImageResource(R.mipmap.ic_contacts_n);
-            meIV.setImageResource(R.mipmap.ic_mine_s);
+            chatIV.setImageResource(R.drawable.ic_chat_n);
+            contactsIV.setImageResource(R.drawable.ic_contacts_n);
+            meIV.setImageResource(R.drawable.ic_mine_s);
         }
     }
 
