@@ -9,8 +9,8 @@ import com.xinbida.wukongim.entity.WKChannelType;
  * api地址
  */
 public class WKApiConfig {
-    public static String defaultBaseUrl = "http://api.im.catli.net/v1/";
-    public static String defaultBaseWebUrl = "http://web.im.catli.net/";
+    public static String defaultBaseUrl = "http://api.im.mixbench.net/v1/";
+    public static String defaultBaseWebUrl = "http://api.im.mixbench.net/web/";
 
     public static String baseUrl = defaultBaseUrl;
     public static String baseWebUrl = defaultBaseWebUrl;
