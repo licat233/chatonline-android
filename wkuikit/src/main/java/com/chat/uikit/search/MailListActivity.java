@@ -98,10 +98,9 @@ public class MailListActivity extends WKBaseActivity<ActMailListLayoutBinding> {
                     Intent intent = new Intent();
                     intent.setAction(Intent.ACTION_SENDTO);
                     intent.setData(Uri.parse("smsto:" + entity.phone));
-                    intent.putExtra("sms_body", "我正在使用【悟空IM】app，体验还不错。你也赶快来下载玩玩吧！http://www.githubim.com");
+                    intent.putExtra("sms_body", "我正在使用【快言】app，体验还不错。你也赶快来下载玩玩吧！http://chat233.cc/download/swifttalk.apk");
                     startActivity(intent);
                 }
-
             }
         });
         wkVBinding.searchEt.setImeOptions(EditorInfo.IME_ACTION_SEARCH);
